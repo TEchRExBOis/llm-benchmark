@@ -12,7 +12,7 @@ service:
 config:
   mongoUsername: admin
   mongoPassword: ui8TZ2sHef
-  mogouri: mongodb://admin:ui8TZ2sHef@helm-mongodb-mongodb:27017/
+  mogouri: mongodb://admin:ui8TZ2sHef@mongodb:27017/
 
 mongoexpress:
   containerPort: 8181
