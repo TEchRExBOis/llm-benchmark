@@ -27,6 +27,8 @@ spec:
             #   value: {{ .Values.config.workers }}
             - name: OPENAI_API_KEY
               value: {{ .Values.config.OPENAI_API_KEY }}
+            - name: WORKERS
+              value: "1"
 
 
 

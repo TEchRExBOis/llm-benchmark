@@ -22,6 +22,9 @@ spec:
           envFrom:
             - configMapRef:
                 name: my-config
+          env:
+            - name: WORKERS
+              value: "1"
 
 
 
