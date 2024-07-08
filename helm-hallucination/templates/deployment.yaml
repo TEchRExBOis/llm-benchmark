@@ -21,7 +21,7 @@ spec:
             - containerPort: {{ .Values.hallucination.containerPort }}
           envFrom:
             - configMapRef:
-                name: {{ .Release.Name }}-config
+                name: my-config
           env:
             # - name: WORKERS
             #   value: {{ .Values.config.workers }}

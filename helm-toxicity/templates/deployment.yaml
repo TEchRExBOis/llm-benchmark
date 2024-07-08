@@ -19,6 +19,9 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           ports:
             - containerPort: {{ .Values.toxicity.containerPort }}
+          envFrom:
+            - configMapRef:
+                name: my-config
 
 
 
